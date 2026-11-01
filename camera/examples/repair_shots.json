@@ -1,0 +1,22 @@
+{
+  "defaults": { "fps": 24, "frames": 96, "res": [1920, 1080], "aspect": "2.39", "samples": 192,
+                "shutter": 180, "sensor": "s35", "fstop": 2.8, "ease": "inout", "handheld": 0.0 },
+  "shots": [
+    { "name": "bench_push", "move": "push_in", "frames": 120, "handheld": 0.15,
+      "keys": [ { "t": 0, "pos": [1.60, 3.65, 1.36], "aim_obj": "oscilloscope", "lens": 35 },
+                { "t": 1, "pos": [1.05, 2.80, 1.16], "aim_obj": "oscilloscope" } ],
+      "focus": { "mode": "rack", "keys": [ { "t": 0, "obj": "helping_hands" }, { "t": 0.35, "obj": "helping_hands" },
+                                           { "t": 0.75, "obj": "oscilloscope" } ] },
+      "fstop": 2.0 },
+    { "name": "scope_85", "move": "static", "frames": 72, "handheld": 0.4, "fstop": 1.8, "blades": 7,
+      "keys": [ { "t": 0, "pos": [1.90, 3.40, 1.25], "aim_obj": "oscilloscope", "lens": 85 } ],
+      "focus": { "mode": "track", "obj": "oscilloscope" } },
+    { "name": "bench_orbit", "move": "orbit", "frames": 120, "handheld": 0.1, "fstop": 2.8,
+      "orbit": { "center": [0.42, 2.55, 0.98], "radius": 0.75, "start_deg": -40, "end_deg": 40, "height": 1.32 },
+      "keys": [ { "t": 0, "lens": 24 } ] },
+    { "name": "shop_vertigo", "move": "dolly_zoom", "frames": 120, "fstop": 4.0,
+      "keys": [ { "t": 0, "pos": [3.30, 5.80, 1.50], "aim_obj": "oscilloscope", "lens": 50 },
+                { "t": 1, "pos": [2.10, 3.75, 1.38] } ],
+      "subject": "oscilloscope" }
+  ]
+}

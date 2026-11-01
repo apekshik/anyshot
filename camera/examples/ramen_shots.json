@@ -1,0 +1,22 @@
+{
+  "defaults": { "fps": 24, "frames": 96, "res": [1920, 1080], "aspect": "2.39", "samples": 192,
+                "shutter": 180, "sensor": "s35", "fstop": 2.8, "ease": "inout", "handheld": 0.0 },
+  "shots": [
+    { "name": "counter_push", "move": "push_in", "frames": 120, "handheld": 0.15,
+      "keys": [ { "t": 0, "pos": [2.95, 4.35, 1.30], "aim_obj": "ramen_bowl_unfinished", "lens": 35 },
+                { "t": 1, "pos": [2.55, 3.60, 1.13], "aim_obj": "ramen_bowl_unfinished" } ],
+      "focus": { "mode": "rack", "keys": [ { "t": 0, "obj": "ramen_water_glass" }, { "t": 0.35, "obj": "ramen_water_glass" },
+                                           { "t": 0.75, "obj": "ramen_bowl_unfinished" } ] },
+      "fstop": 2.0 },
+    { "name": "neko_85", "move": "static", "frames": 72, "handheld": 0.4, "fstop": 1.8, "blades": 7,
+      "keys": [ { "t": 0, "pos": [3.25, 4.20, 1.28], "aim_obj": "ramen_maneki_neko", "lens": 85 } ],
+      "focus": { "mode": "track", "obj": "ramen_maneki_neko" } },
+    { "name": "bowl_orbit", "move": "orbit", "frames": 120, "handheld": 0.1, "fstop": 2.8,
+      "orbit": { "center_obj": "ramen_bowl_unfinished", "radius": 0.55, "start_deg": -50, "end_deg": 45, "height": 1.22 },
+      "keys": [ { "t": 0, "lens": 24 } ] },
+    { "name": "aisle_vertigo", "move": "dolly_zoom", "frames": 120, "fstop": 4.0, "ease": "inout",
+      "keys": [ { "t": 0, "pos": [3.05, 5.70, 1.45], "aim_obj": "ticket_machine", "lens": 50 },
+                { "t": 1, "pos": [3.05, 3.10, 1.42] } ],
+      "subject": "ticket_machine" }
+  ]
+}
